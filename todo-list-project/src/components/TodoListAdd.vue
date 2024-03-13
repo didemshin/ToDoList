@@ -40,7 +40,6 @@
           active:false,
           text: "",
         },
-
       }
     },
     methods:{
@@ -54,7 +53,7 @@
         }
       },
       removeTodo(itemID) {
-        const arrayIndex = this.todosList.map(e => e.id).indexOf(itemID);
+        const arrayIndex = this.todosList.map(item => item.id).indexOf(itemID);
         this.todosList.splice(arrayIndex, 1)
       },
     },
